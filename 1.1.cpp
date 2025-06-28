@@ -4,10 +4,10 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        int count = size(nums);
+        int size = nums.size();
         vector<int> output;
-        for (int i = 0; i < count; i++) {
-            for (int j = i + 1; j < count; j++) {
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
                 if (nums[i] + nums[j] == target) {
                     output.push_back(i);
                     output.push_back(j);
